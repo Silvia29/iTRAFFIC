@@ -31,15 +31,15 @@ font-weight: 200;
    }
    .details{
     display:block;
-    height: 59px;
-    width: 59px;
+    height: 49px;
+    width: 49px;
     border-radius: 50%;
     background-color: #448AFF;
     
     color:white;
     font-size:35px;
     margin-left: 319px;
-    margin-top:-32px;
+    margin-top:-60px;
    }
    [cards] {
     .grid-full ion-col {
@@ -101,7 +101,7 @@ font-weight: 200;
         margin-top:-26px;
        width:100px;
        height:113px;
-       margin-bottom:-9px;
+       margin-bottom:-4px;
         margin-right:1px;
     } 
     .text-input{
@@ -109,32 +109,76 @@ font-weight: 200;
         position: relative;
         margin-top: -4px;
         
-        input[type="text"]{
-          display: inline-block;
-          width: 70px;
-          height: 28px;
-          box-sizing: border-box;
-          outline: none;
-          border: 1px solid lightgray;
-          border-radius: 3px;
-          padding: 10px 10px 8px 100px;
+        // input[type="text"]{
+        //   display: inline-block;
+        //   width: 70px;
+        //   height: 28px;
+        //   font-size:5px;
+        //   color:black;
+        //   box-sizing: border-box;
+        //   outline: none;
+        //   border: 1px solid lightgray;
+        //   border-radius: 3px;
+        //   padding: 10px 10px 8px 90px;
        
-        }
+        // }
         
-        input[type="text"] + label{
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          height: 28px;
-          line-height: 28px;
-          color: white;
-          border-radius: 3px 0 0 3px;
-          padding: 0 10px;
-          background: rgb(10, 177, 228);
+        // input[type="text"] + label{
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   bottom: 0;
+        //   height: 28px;
+        //   line-height: 28px;
+        //   color: white;
+        //   border-radius: 3px 0 0 3px;
+        //   padding: 0 10px;
+        //   background: rgb(10, 177, 228);
        
-        }
+        // }
+    .count-label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 29px;
+        line-height: 29px;
+        color: white;
+        border-radius: 3px 0 0 3px;
+        padding: 0 10px;
+        background: rgb(10, 177, 228);
+     
+    }
+    .count-box{
+        display: inline-block;
+        width: 55px;
+        height: 30px;
+     
+      line-height: 5px;
+        font-size:20px;
+        color:black;
+        box-sizing: border-box;
+        outline: none;
+        border: 2px solid lightgray;
+        border-radius: 3px;
+        padding: 10px 30px 8px 72px;
+     
+    }
     
+    
+}
+.undo{
+float: right;
+margin-top:1px;
+margin-left:0px;
+margin-right:-14px;
+color:white;
+font-size:13px;
+width:44px;
+height:29px;
+border-radius: 3px ;
+    background: rgb(10, 177, 228);
+ 
 }
 
 }
