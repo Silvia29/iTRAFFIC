@@ -11,6 +11,6 @@ public count:number=0;
 
   }
 increment(){
-  this.count+=0;
+  this.count+=1;
 }
 }
