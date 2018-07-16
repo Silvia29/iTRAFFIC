@@ -1,140 +1,198 @@
 <ion-header class="header-details">
     <h2 class="title">PROJECT NAME :</h2>
     <h2 class="title-name">XYZ SURVEY</h2>
-   <button class="details">+</button>
+   <button class="details"  ><ion-icon name="list"></ion-icon></button>
    
   
 </ion-header>
 
-<ion-content padding class="masters">
-    <div cards>
+<ion-content class="masters" >
+    <ion-grid class="grid" >
 
-        <div class="grid-full">
-          <ion-row>
-            <ion-col>
-              <ion-card>
-              
-
-                <img class="icon-1"  src="https://image.flaticon.com/icons/svg/985/985169.svg" (click)="increment()"/>
-                <div class="text-input">
-                    <div class="count-label">Count</div>
-                    <div class="count-box">{{count}}</div>
-                    <button class="undo">Undo</button>
-                    <!-- <input type="text" id="input1" placeholder="hh" >
-                    <label for="input1">Count</label> -->
-                  
-                  </div>
-                
+        <ion-row  >
+      
+          <ion-col col-4 class="ion-cols"> 
+              <div class="picture" >
                
-                
-                
-            
-              </ion-card>
-            </ion-col>
-    
-            <ion-col>
-              <ion-card>
-                  
-           
-               
-                <img class="icon-1" src="https://image.flaticon.com/icons/svg/985/985198.svg"/>
-                <div class="text-input">
-                        <div class="count-label">Count</div>
-                        <div class="count-box">{{count}}</div>
-                        <button class="undo">Undo</button>
-                  </div>
-                
-               
-              </ion-card>
-            </ion-col>
-    
-            <ion-col>
-              <ion-card>
-                 
-                  <img class="icon-1" src="https://image.flaticon.com/icons/svg/909/909156.svg"/>
-                  <div class="text-input">
-                        <div class="count-label">Count</div>
-                        <div class="count-box">{{count}}</div>
-                        <button class="undo">Undo</button>
-                  </div>
-                
-              </ion-card>
-            </ion-col>
-    
-            <ion-col>
-              <ion-card>
-                
-               
-                  <img class="icon-1" src="https://cdn2.iconfinder.com/data/icons/shop-payment-vol-5/128/shop-08-512.png"/>
-                  <div class="text-input">
-                  
-                        <div class="count-label">Count</div>
-                        <div class="count-box">{{count}}</div>
-                        <button class="undo">Undo</button>
-                  </div>
-                
-              </ion-card>
-            </ion-col>
-            <ion-col>
-                <ion-card>
-                  
-               
-                  
-                    <img class="icon-1" src="https://image.flaticon.com/icons/svg/539/539856.svg"/>
-                    <div class="text-input">
-                            <div class="count-label">Count</div>
-                            <div class="count-box">{{count}}</div>
-                            <button class="undo">Undo</button>
-                      </div>
-                    
-                </ion-card>
-              </ion-col>
-              <ion-col>
-                  <ion-card>
-                    
-                      
-                     
-                      <img class="icon-1" src="https://image.flaticon.com/icons/svg/974/974610.svg"/>
-                      <div class="text-input">
-                            <div class="count-label">Count</div>
-                            <div class="count-box">{{count}}</div>
+                    <img class="icons"  src="https://image.flaticon.com/icons/svg/985/985169.svg" (click)="increment_bus1()"/>
+                    <p class="name">Public Bus</p>
+                    <div class="container">
+                    <div class="counter">{{count_bus1}}
                             
-                      </div>
+                    </div>
+                   <div class="icon-trash" ><ion-icon name="trash" class="trash" (click)="decrement()"></ion-icon> </div></div>
                     
-                  </ion-card>
-                </ion-col>
-                <ion-col>
-                    <ion-card>
+                    
+               
+              </div>
+          
+          </ion-col>
+          
+          <ion-col col-4 class="ion-cols" > 
+                <div class="picture">
+               
+                        <img class="icons"  src="https://image.flaticon.com/icons/svg/985/985198.svg"/>
+                        <p class="name">Truck-1</p>
+                        <div class="container">
+                        <div class="counter">2
+                                
+                        </div>
+                       <div class="icon-trash"><ion-icon name="trash" class="trash"></ion-icon> </div></div>
+                        
+                        
+                   
+                  </div>
+         </ion-col>
+         <ion-col col-4 class="ion-cols">
+                <div class="picture">
+               
+                        <img class="icons"  src="https://image.flaticon.com/icons/svg/909/909156.svg" (click)="increment_rick()"/>
+                        <p class="name"> Rickshaw</p>
+                        <div class="container">
+                        <div class="counter">{{count_rick}}
+                                
+                        </div>
+                       <div class="icon-trash"><ion-icon name="trash" class="trash" (click)="decrement_rick()"></ion-icon> </div></div>
+                        
+                        
+                   
+                  </div>
+              </ion-col>
+              <ion-col col-4 class="ion-cols">
+                    <div class="picture">
+               
+                            <img class="icons"  src="https://cdn2.iconfinder.com/data/icons/shop-payment-vol-5/128/shop-08-512.png" (click)="increment_cart()"/>
+                            <p class="name">Cart</p>
+                            <div class="container">
+                            <div class="counter">{{count_cart}}
+                                    
+                            </div>
+                           <div class="icon-trash"><ion-icon name="trash" class="trash" (click)="decrement_cart()"></ion-icon> </div></div>
+                            
+                            
                        
-                       
-                       
-                        <img class="icon-1" src="https://image.flaticon.com/icons/svg/974/974610.svg"/>
-                    </ion-card>
+                      </div>
                   </ion-col>
-                  <ion-col>
-                      <ion-card>
-                          
-                          <img class="icon-1" src="https://image.flaticon.com/icons/svg/974/974610.svg"/>
-                      </ion-card>
-                    </ion-col>
-                    <ion-col>
-                        <ion-card>
-                            <button class="up"></button>
-                            <h1 grey>0</h1>
-                            <button class="down" ></button>
-                            <img class="icon-1" src="https://image.flaticon.com/icons/svg/974/974610.svg"/>
-                        </ion-card>
+                  <ion-col col-4 class="ion-cols">
+                        <div class="picture">
+               
+                                <img class="icons"  src="https://image.flaticon.com/icons/svg/539/539856.svg" (click)="increment_horse()"/>
+                                <p class="name">Horse</p>
+                                <div class="container">
+                                <div class="counter">{{count_horse}}
+                                        
+                                </div>
+                               <div class="icon-trash"><ion-icon name="trash" class="trash" (click)="decrement_horse()"></ion-icon> </div></div>
+                                
+                                
+                           
+                          </div>
                       </ion-col>
-                      <ion-col>
-                          <ion-card>
-                              <button class="up"></button>
-                              <h1 grey>0</h1>
-                              <button class="down" ></button>
-                              <img class="icon-1" src="https://image.flaticon.com/icons/svg/985/985174.svg"/>
-                          </ion-card>
-                        </ion-col>
-          </ion-row>
-        </div>
-</div>    
-  
+                      <ion-col col-4 class="ion-cols">
+                            <div class="picture">
+               
+                             <img class="icons"  src="https://image.flaticon.com/icons/svg/974/974610.svg" (click)="increment_agri()"/>
+                                    <p class="name">Agri-Tractor</p>
+                                    <div class="container">
+                                    <div class="counter">2
+                                            
+                                    </div>
+                                   <div class="icon-trash"><ion-icon name="trash" class="trash"></ion-icon> </div></div>
+                                    
+                                    
+                               
+                              </div>
+                          </ion-col>
+                          <ion-col col-4 class="ion-cols">
+                                <div class="picture">
+               
+                                        <img class="icons"  src="https://image.flaticon.com/icons/svg/985/985174.svg"/>
+                                        <p class="name">Truck-2</p>
+                                        <div class="container">
+                                        <div class="counter">2
+                                                
+                                        </div>
+                                       <div class="icon-trash"><ion-icon name="trash" class="trash"></ion-icon> </div></div>
+                                        
+                                        
+                                   
+                                  </div>
+                              </ion-col>
+                              <ion-col col-4 class="ion-cols">
+                                    <div class="picture">
+               
+                                            <img class="icons"  src="https://image.flaticon.com/icons/png/512/881/881223.png"/>
+                                            <p class="name">Bike</p>
+                                            <div class="container">
+                                            <div class="counter">2
+                                                    
+                                            </div>
+                                           <div class="icon-trash"><ion-icon name="trash" class="trash"></ion-icon> </div></div>
+                                            
+                                            
+                                       
+                                      </div>
+                                  </ion-col>
+                                  <ion-col col-4 class="ion-cols">
+                                        <div class="picture">
+               
+                                                <img class="icons"  src="https://image.flaticon.com/icons/svg/1013/1013861.svg"/>
+                                                <p class="name">Cycle</p>
+                                                <div class="container">
+                                                <div class="counter">2
+                                                        
+                                                </div>
+                                               <div class="icon-trash"><ion-icon name="trash" class="trash"></ion-icon> </div></div>
+                                                
+                                                
+                                           
+                                          </div>
+                                      </ion-col>
+        <ion-col col-4 class="ion-cols">
+           <div class="picture">
+                <img class="icons"  src="https://image.flaticon.com/icons/png/512/509/509999.png" (click)="increment_auto()"/>
+                <p class="name">4-wheeler</p>
+                <div class="container">
+                <div class="counter">{{count_auto}}
+                </div>
+                 <div class="icon-trash"><ion-icon name="trash" class="trash" (click)="decrement_auto()"></ion-icon> 
+                </div>
+                </div>
+                                                    
+             </div>
+       </ion-col>
+        <ion-col col-4 class="ion-cols">
+            <div class="picture">
+                <img class="icons"  src="https://image.flaticon.com/icons/svg/543/543936.svg" (click)="increment_bus2()"/>
+                <p class="name">Bus-2</p>
+                <div class="container">
+                <div class="counter">{{count_bus2}}
+                </div>
+                 <div class="icon-trash"><ion-icon name="trash" class="trash" (click)="decrement_bus2()"></ion-icon> 
+                </div>
+                </div>
+                                                    
+             </div>
+       </ion-col>
+       <ion-col col-4 class="ion-cols">
+        <div class="picture">
+
+                <img class="icons"  src="https://image.flaticon.com/icons/svg/1013/1013861.svg"/>
+                <p class="name">Cycle</p>
+                <div class="container">
+                <div class="counter">2
+                        
+                </div>
+               <div class="icon-trash"><ion-icon name="trash" class="trash"></ion-icon> </div></div>
+                
+                
+           
+          </div>
+      </ion-col>
+                                           
+                          
+        </ion-row>
+
+      </ion-grid>
+
 </ion-content>
