@@ -1,109 +1,72 @@
 page-home {
-   .masters{
-       background-image: url("https://images.cdn2.stockunlimited.net/clipart/car-pattern-background_1816296.jpg");
- 
-    //    background-color: #00968723;
-   }
-   
-   .header-details{
-       background-color: #009688;
-       border-top:16px solid #00796B;
-       width:100%;
-       height:96px;
-       padding:2px;
-       
+    .login-back{
+        background-image: url("../../assets/imgs/city-crossroad-with-traffic-lights-vector-19713602.jpg");
+        background-repeat:no-repeat;
+      background-size:cover;
+     
     
-     .title{
-font-weight: 200;
-     margin-left:20px;
-        font-size:.3.0rem;
-        color:#FFFFFF;
-        line-height:.2;
-       
-     }
-     .title-name{
-        font-weight: 300;
-        margin-left:20px;
-           font-size:1.5rem;
-           color:#B2DFDB;
-     }
-
-   }
-   .details{
-    display:block;
-    height: 59px;
-    width: 59px;
-    border-radius: 50%;
-    background-color: #FFC107;
-    
-    color:white;
-    font-size:35px;
-    margin-left: 319px;
-    margin-top:-32px;
-   }
-   [cards] {
-    .grid-full ion-col {
-        flex: 0 0 50%;
-        max-width: 55%;
-        padding: 5px 0;
     }
-    .row {
-        padding: 0 11px;
-    }
-    .col {
-        padding: 5px 0;
-    }
-    .card {
-        // background-color: #00968731;
-        opacity:.92;
-      margin-left:2px;
-        margin-right:2px;
-        width: calc(100% - 9px);
-        height:168px;
-        margin-bottom:-9px;
-        padding: 10px;
-        box-shadow: 0 2px 10px 0 rgb(2, 127, 131);
-       
-        border-radius: 4px;
-        h1 {
-            // padding-top:42px;
-            font-weight: 800;
-            padding:5px;
-            font-size: 2.0rem;
-        }
-        p {
-            font-weight: 100;
-            font-size: 1.5rem;
-        }
-    }
-    .up {
-       
-        background-color:transparent;
-        width: 40px;
-        height: 20px;
+    .container{
+        margin-top:267px;
+        height:600px;
         
+ margin-bottom: 0px;
+    background-color: #020607a1;
+    opacity:.9;
+    
+    }
+    .log{
+     padding-top:10px;
+        text-align: center;
         font-size: 40px;
-        border-bottom: solid 40px rgb(107, 105, 98);
-        border-left: solid 20px transparent;
-        border-right: solid 20px transparent;
-      }
-     .down {
-         background-color: transparent;
-        width: 40px;
-        height: 20px;
-        border-top: solid 40px rgb(105, 102, 94);
-        border-left: solid 20px transparent;
-        border-right: solid 20px transparent;
-      }
-      .icon-1{
-        margin-top:-56px;
-         float:right;
-        width: 74px;
-        height:74px;
-        margin-right:1px;
-    } 
+        color:rgb(255, 255, 255);
+       
+       }
+       .line{
+        margin-top:-29px;
+           margin-left:99px;
+           margin-right:99px;
+           border-bottom: 3px solid rgb(248, 248, 248);
+           margin-bottom:25px;
+       }
     
-    
-}
+       input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+      
+       
+    }
+       input[type=text], input[type=password] {
+       height:45px;
+       width:308px;
+       
+       margin-left:41px;
+       margin-bottom:5px;
+    }
+    .icon-email{
+        display: inline-block;
+        margin-left:10px;
+        margin-right:-10px;
+      font-size: 40px;
+    color:rgb(255, 210, 9);
+    }
 
+//     .form-input::before{
+//       content: "\f007";
+//         position: absolute;
+// font-size:35px;
+//         padding-left:5px;
+//         padding-top:5px;
+//     }
+    .button {
+        background-color: rgba(12, 240, 229, 0.432);
+        color: rgb(255, 255, 255);
+        padding: 14px 20px;
+        font-size: 20px;
+     margin-top:30px;
+        border: 2px solid rgb(1, 87, 87);
+      
+        width: 100%;
+    }
+    
+    
 }
