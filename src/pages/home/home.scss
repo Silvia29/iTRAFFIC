@@ -7,27 +7,27 @@ page-home {
     
     }
     .container{
-        margin-top:267px;
+        margin-top:187px;
         height:600px;
         
- margin-bottom: 0px;
-    background-color: #020607a1;
-    opacity:.9;
+         margin-bottom: 0px;
+         background-color: #0206074d;
+       opacity:.9;
     
     }
+ 
     .log{
-     padding-top:10px;
+     padding-top:15px;
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
         color:rgb(255, 255, 255);
-       
-       }
-       .line{
-        margin-top:-29px;
-           margin-left:99px;
-           margin-right:99px;
-           border-bottom: 3px solid rgb(248, 248, 248);
-           margin-bottom:25px;
+    }
+    .line{
+        margin-top:-22px;
+        margin-left:99px;
+        margin-right:99px;
+        border-bottom: 2px solid rgb(240, 240, 240);
+        margin-bottom:25px;
        }
     
        input:-webkit-autofill {
@@ -35,20 +35,50 @@ page-home {
       
        
     }
-       input[type=text], input[type=password] {
-       height:45px;
-       width:308px;
-       
-       margin-left:41px;
-       margin-bottom:5px;
+    label {
+        display:inline-block;
+        background-color: rgb(247, 166, 60);
+        font-weight: 1000;
+        width:92px;
+        height:48px;
+      font-size:1.2em;
+        padding:12px;
+        white-space:nowrap;
+     margin-left:36px;
+     border-radius: 4px;
+    
+      }
+    
+       input[type=text] {
+        display:inline-block;
+           margin-top:49px;
+        height:51px;
+        width:282px;
+        padding-left:35px;
+        border-radius: 4px;
+        margin-left:-5px;
+        margin-bottom:40px;
+        // border-bottom:4px solid rgb(3, 1, 0);
     }
-    .icon-email{
-        display: inline-block;
-        margin-left:10px;
-        margin-right:-10px;
-      font-size: 40px;
-    color:rgb(255, 210, 9);
+
+    input[type=password] {
+        height:51px;
+        width:282px;
+        padding-left:35px;
+        border-radius: 4px;
+        margin-left:-5px;
+        margin-bottom:5px;
+        // border-bottom:4px solid rgb(0, 0, 0);
     }
+
+    
+    // .icon-email{
+    //     display: inline-block;
+    //     margin-left:10px;
+    //     margin-right:-10px;
+    //   font-size: 40px;
+    // color:rgb(255, 210, 9);
+    // }
 
 //     .form-input::before{
 //       content: "\f007";
@@ -58,15 +88,18 @@ page-home {
 //         padding-top:5px;
 //     }
     .button {
-        background-color: rgba(12, 240, 229, 0.432);
+        background-color: rgba(12, 240, 229, 0.514);
         color: rgb(255, 255, 255);
         padding: 14px 20px;
         font-size: 20px;
-     margin-top:30px;
-        border: 2px solid rgb(1, 87, 87);
-      
-        width: 100%;
+     margin-top:45px;
+        border: 1px solid rgb(1, 87, 87);
+        box-shadow:5px 5px 0 0 rgb(1, 87, 87);
+        margin-left:10px;
+        width: 94%;
     }
-    
+    .button:active{
+        box-shadow:10px 10px 0 0 rgb(1, 87, 87);
+    }
     
 }
