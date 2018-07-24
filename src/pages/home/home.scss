@@ -1,109 +1,67 @@
 page-home {
-   .masters{
-       background-image: url("https://images.cdn2.stockunlimited.net/clipart/car-pattern-background_1816296.jpg");
- 
-    //    background-color: #00968723;
-   }
-   
-   .header-details{
-       background-color: #009688;
-       border-top:16px solid #00796B;
-       width:100%;
-       height:96px;
-       padding:2px;
-       
-    
-     .title{
-font-weight: 200;
-     margin-left:20px;
-        font-size:.3.0rem;
-        color:#FFFFFF;
-        line-height:.2;
-       
-     }
-     .title-name{
-        font-weight: 300;
-        margin-left:20px;
-           font-size:1.5rem;
-           color:#B2DFDB;
-     }
 
-   }
-   .details{
-    display:block;
-    height: 59px;
-    width: 59px;
-    border-radius: 50%;
-    background-color: #FFC107;
-    
-    color:white;
-    font-size:35px;
-    margin-left: 319px;
-    margin-top:-32px;
-   }
-   [cards] {
-    .grid-full ion-col {
-        flex: 0 0 50%;
-        max-width: 55%;
-        padding: 5px 0;
-    }
-    .row {
-        padding: 0 11px;
-    }
-    .col {
-        padding: 5px 0;
-    }
-    .card {
-        // background-color: #00968731;
-        opacity:.92;
-      margin-left:2px;
-        margin-right:2px;
-        width: calc(100% - 9px);
-        height:168px;
-        margin-bottom:-9px;
-        padding: 10px;
-        box-shadow: 0 2px 10px 0 rgb(2, 127, 131);
-       
-        border-radius: 4px;
-        h1 {
-            // padding-top:42px;
-            font-weight: 800;
-            padding:5px;
-            font-size: 2.0rem;
-        }
-        p {
-            font-weight: 100;
-            font-size: 1.5rem;
-        }
-    }
-    .up {
-       
-        background-color:transparent;
-        width: 40px;
-        height: 20px;
-        
-        font-size: 40px;
-        border-bottom: solid 40px rgb(107, 105, 98);
-        border-left: solid 20px transparent;
-        border-right: solid 20px transparent;
-      }
-     .down {
-         background-color: transparent;
-        width: 40px;
-        height: 20px;
-        border-top: solid 40px rgb(105, 102, 94);
-        border-left: solid 20px transparent;
-        border-right: solid 20px transparent;
-      }
-      .icon-1{
-        margin-top:-56px;
-         float:right;
-        width: 74px;
-        height:74px;
-        margin-right:1px;
-    } 
-    
-    
+.masters{
+    background-image: url("https://wallpapershome.com/images/pages/pic_v/11926.jpg");
+    opacity:.9;
 }
+.page-name{
+    margin-top:17px;
+    margin-left:171px;
+    font-size:2.3em;
+    color:white;
+
+}
+ p{
+
+    font-size:.61em;
+}
+.heading{
+
+    font-size: 1.7em;
+    color:white;
+}
+
+    ion-card {
+      position: relative;
+      text-align: center;
+
+      padding:10px;
+      height:207px;
+    }
+    .cards{
+        background-color: rgba(248, 248, 248, 0.171);
+
+    }
+
+    .card-title {
+      position: absolute;
+      top: 30%;
+      margin-left:-5px;
+      font-size: 1.75em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      position: relative;
+      top: 60%;
+      width: 100%;
+
+
+      font-size:24px;
+      color: rgb(136, 17, 33);
+    }
+    .card-subtitle h2{
+        display: inline-block;
+        margin-left:10px;
+        font-size:.8em;
+        font-weight:500;
+        color:rgb(104, 102, 102);
+    }
+    .card-title:active{
+        border-bottom:2px solid white;
+
+    }
 
 }
