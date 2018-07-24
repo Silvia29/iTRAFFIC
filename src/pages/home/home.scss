@@ -6,13 +6,13 @@ page-home {
 }
 .page-name{
     margin-top:17px;
-    margin-left:171px;
+    margin-left:74px;
     font-size:2.3em;
     color:white;
 
 }
  p{
-
+    color:rgb(221, 221, 221);
     font-size:.61em;
 }
 .heading{
@@ -20,34 +20,43 @@ page-home {
     font-size: 1.7em;
     color:white;
 }
+.project-name{
+    margin-top:20px;
+    height:53px;
+    width:240px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 2px solid rgb(255, 255, 255);
+    font-size: 1.7em;
+    color:white;
+}
 
-    ion-card {
-      position: relative;
-      text-align: center;
+@mixin common_block{
+    text-align:center;
+    padding-top:1px;
+      width:100%;
+      height:148px;
+      color:white;
+}
+.block-1{
+    @include common_block;
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.block-2{
+    @include common_block;
+    background-color: rgba(255, 255, 255, 0.438);
 
-      padding:10px;
-      height:207px;
-    }
-    .cards{
-        background-color: rgba(248, 248, 248, 0.171);
+}
+.block-3{
+    @include common-block;
+    background-color: rgba(229, 226, 226, 0.541);
+}
 
-    }
-
-    .card-title {
-      position: absolute;
-      top: 30%;
-      margin-left:-5px;
-      font-size: 1.75em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-    }
 
     .card-subtitle {
       position: relative;
-      top: 60%;
+      top: 10%;
       width: 100%;
-
+      margin-left:2px;
 
       font-size:24px;
       color: rgb(136, 17, 33);
@@ -55,13 +64,13 @@ page-home {
     .card-subtitle h2{
         display: inline-block;
         margin-left:10px;
+        margin-right:15px;
         font-size:.8em;
         font-weight:500;
         color:rgb(104, 102, 102);
     }
-    .card-title:active{
-        border-bottom:2px solid white;
 
-    }
+
+
 
 }
