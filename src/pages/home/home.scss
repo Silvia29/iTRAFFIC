@@ -1,4 +1,9 @@
 page-home {
+    $browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
     .login-back{
         background-image: url("../../assets/imgs/city-crossroad-with-traffic-lights-vector-19713602\ \(1\).jpg");
         background-repeat:no-repeat;
@@ -20,7 +25,7 @@ page-home {
     .log{
      padding-top:15px;
         text-align: center;
-        font-size: 30px;
+        font-size: em(32);
         color:rgb(255, 255, 255);
     }
     .line{
