@@ -1,20 +1,21 @@
 page-home{
     .masters{
-    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    // background-image: url("https://wallpapersite.com/images/pages/pic_w/680.jpg");
+    background-color:rgb(255, 252, 244);
     opacity:.9;
 }
 .page-name{
     margin-top:17px;
     margin-left:74px;
     font-size:2.3em;
-    font-weight:500;
-
-    color:rgb(5, 4, 105);
-    margin-bottom:30px;
+    color:rgb(245, 94, 7);
 
 }
+h2{
+    font-size:3em;
+}
  p{
-    color:rgb(221, 221, 221);
+    color:rgb(94, 90, 90);
     font-size:.61em;
 }
 .heading{
@@ -22,62 +23,9 @@ page-home{
     font-size: 1.7em;
     color:white;
 }
-.project-name{
-    margin-top:20px;
-    height:53px;
-    width:240px;
-    background-color: rgba(255, 255, 255, 0);
-    outline: 6px solid rgb(255, 254, 254);
-    font-size: 1.7em;
-    color:rgb(19, 3, 112);
-
-}
-
-@mixin common_block{
-    text-align:center;
-    padding-top:1px;
-      width:100%;
-      height:148px;
-      color:white;
-}
-.block-1{
-    @include common_block;
-    background-color: rgba(250, 250, 250, 0.377);
-}
-.block-2{
-    @include common_block;
-    background-color: rgba(199, 199, 199, 0.349);
-
-}
-.block-3{
-    @include common-block;
-    background-color: rgba(250, 250, 250, 0.377);
-}
-.block-4{
-    @include common_block;
-    background-color: rgba(199, 199, 199, 0.349);
-}
 
 
-    .card-subtitle {
-      position: relative;
-      top: 10%;
-      width: 100%;
-      margin-left:2px;
-
-      font-size:24px;
-      color: rgb(206, 6, 32);
-    }
-    .card-subtitle h2{
-        display: inline-block;
-        margin-left:10px;
-        margin-right:58px;
-        font-size:.8em;
-        font-weight:500;
-        color:rgb(17, 17, 17);
-    }
-
-
-
-
+.social-cards ion-col {
+    padding: 0;
+  }
 }
